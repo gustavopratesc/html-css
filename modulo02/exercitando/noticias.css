@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(163, 145, 255));
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+section > nav {
+    text-align: center;
+    margin-right: 20px;
+    
+}
+
+footer {
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+main > h2 {
+    color: red;
+    margin-left: 10px;
+}
+
+main > article {
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}

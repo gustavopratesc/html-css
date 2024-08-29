@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, red, white);
+    width: 100%;
+    display: flex;
+    background-attachment: fixed;
+}
+main {
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+}
+
+#id {
+    background-color: lightcoral;
+    color: yellow;
+}
+
+.class {
+    background-color: blue;
+    color: rgb(0, 255, 0);
+}
+
+

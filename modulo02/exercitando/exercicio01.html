@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Pseudo-Classes</title>
+    <style>
+        body {
+            background-color: rgb(210, 255, 76);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            background-color: lightgray;
+            height: 150px;
+            width: 150px;
+            display: inline-block;
+            border: 1px solid black;
+            margin: 2px;
+        }
+        .p1:hover {
+            background-color: red;
+        }
+        .p1 > .G1 {
+            display: none;
+        }
+        .p1:hover > .G1 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p2:hover {
+            background-color: green;
+        }
+        .p2 > .U2 {
+            display: none;
+        }
+        .p2:hover > .U2 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .p3:hover {
+            background-color: blue;
+        }
+        .p3 > .S3 {
+            display: none;
+        }
+        .p3:hover > .S3 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p4:hover {
+            background-color: yellow;
+        }
+        .p4 > .T4 {
+            display: none;
+        }
+        .p4:hover > .T4 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p5:hover {
+            background-color: rgb(244, 80, 108);
+        }
+        .p5 > .A5 {
+            display: none;
+        }
+        .p5:hover > .A5 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p6:hover {
+            background-color: black;
+        }
+        .p6 > .V6 {
+            display: none;
+        }
+        .p6:hover > .V6 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p7:hover {
+            background-color: blueviolet;
+        }
+        .p7 > .O7 {
+            display: none;
+        }
+        .p7:hover > .O7 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p8:hover {
+            background-color: brown;
+        }
+        .p9:hover {
+            background-color: cornflowerblue;
+        }
+        .p10:hover {
+            background-color: aqua;
+        }
+        .p10 > .P8 {
+            display: none;
+        }
+        .p10:hover > .P8 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p11:hover {
+            background-color: chocolate;
+        }
+        .p11 > .R9 {
+            display: none;
+        }
+        .p11:hover > .R9 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        } 
+        .p12:hover {
+            background-color: rgb(186, 167, 153);
+        }
+        .p12 > .A10 {
+            display: none;
+        }
+        .p12:hover > .A10 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p13:hover {
+            background-color: rgb(146, 230, 77);
+        }
+        .p13 > .T11 {
+            display: none;
+        }
+        .p13:hover > .T11 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p14:hover {
+            background-color: rgb(3, 76, 107);
+        }
+        .p14 > .E12 {
+            display: none;
+        }
+        .p14:hover > .E12 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p15:hover {
+            background-color: rgb(174, 255, 0);
+        }
+        .p15 > .S13 {
+            display: none;
+            
+        }
+        .p15:hover > .S13 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p16:hover {
+            background-color: rgb(204, 79, 79);
+        }
+        .p17:hover {
+            background-color: rgb(255, 0, 183);
+        }
+        .p18:hover {
+            background-color: rgb(75, 1, 11);
+        }
+        .p19:hover {
+            background-color: rgb(0, 255, 153);
+        }
+        .p19 > .C14 {
+            display: none;
+        }
+        .p19:hover > .C14 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p20:hover {
+            background-color: rgb(40, 48, 4);
+        }
+        .p20 > .A15 {
+            display: none;
+        }
+        .p20:hover > .A15 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p21:hover {
+            background-color: rgb(0, 8, 250);
+        }
+        .p21 > .E16 {
+            display: none;
+        }
+        .p21:hover > .E16 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p22:hover {
+            background-color: rgb(52, 119, 0);
+        }
+        .p22 > .T17 {
+            display: none;
+        }
+        .p22:hover > .T17 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p23:hover {
+            background-color: rgb(75, 55, 55);
+        }
+        .p23 > .A18 {
+            display: none;
+        }
+        .p23:hover > .A18 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p24:hover {
+            background-color: rgb(74, 2, 93);
+        }
+        .p24 > .N19 {
+            display: none;
+        }
+        .p24:hover > .N19 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p25:hover {
+            background-color: rgb(71, 18, 56);
+        }
+        .p25 > .O20 {
+            display: none;
+        }
+        .p25:hover > .O20 {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .p26:hover {
+            background-color: rgb(10, 2, 59);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="p1">01
+        <p class="G1">G</p>
+    </div>
+    <div class="p2">02
+        <p class="U2">U</p>
+    </div>
+    <div class="p3">03
+        <p class="S3">S</p>
+    </div>
+    <div class="p4">04
+        <p class="T4">T</p>
+    </div>
+    <div class="p5">05
+        <p class="A5">A</p>
+    </div>
+    <div class="p6">06
+        <p class="V6">V</p>
+    </div>
+    <div class="p7">07
+        <p class="O7">O</p>
+    </div>
+    <div class="p8">08
+        <p>-</p>
+    </div>
+    <div class="p9">09
+        <p>-</p>
+    </div>
+    <div class="p10">10
+        <p class="P8">P</p>
+    </div>
+    <div class="p11">11
+        <p class="R9">R</p>
+    </div>
+    <div class="p12">12
+        <p class="A10">A</p>
+    </div>
+    <div class="p13">13
+        <p class="T11">T</p>
+    </div>
+    <div class="p14">14
+        <p class="E12">E</p>
+    </div>
+    <div class="p15">15
+        <p class="S13">S</p>
+    </div>
+    <div class="p16">16
+        <p>-</p>
+    </div>
+    <div class="p17">17
+        <p>-</p>
+    </div>
+    <div class="p18">18
+        <p>-</p>
+    </div>
+    <div class="p19">19
+        <p class="C14">C</p>
+    </div>
+    <div class="p20">20
+        <p class="A15">A</p>
+    </div>
+    <div class="p21">21
+        <p class="E16">E</p>
+    </div>
+    <div class="p22">22
+        <P class="T17">T</P>
+    </div>
+    <div class="p23">23
+        <p class="A18">A</p>
+    </div>
+    <div class="p24">24
+        <p class="N19">N</p>
+    </div>
+    <div class="p25">25
+        <p class="O20">O</p>
+    </div>
+    <div class="p26">26
+        <p>-</p>
+    </div>
+
+</body>
+</html>
