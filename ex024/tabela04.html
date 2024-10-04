@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        col.cnome {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+            
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="colgroup">Nome</th>
+            <th scope="colgroup">Sexo</th>
+            <th scope="colgroup">Idade</th>
+            <th scope="colgroup">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Padeiro</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Prófessora</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Enfermeiro</td>
+        </tr>
+        <tr>
+            <td>Luiza</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>33</td>
+            <td>Psicologa</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabela 03</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        tr, th {
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+            
+        }
+        #oi.personalizado {
+            text-align: left;
+        }
+        .personalizado{
+            background-color: rgba(0, 0, 0, 0.549);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="personalizado" scope="col">Área</th>
+                <th class="personalizado" scope="col">Disciplinas</th>
+                <th colspan="2" class="personalizado" scope="colgroup">Notas
+                    Nota 1
+                    Nota 2
+                </th>
+                <th class="personalizado" scope="col">Média</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="personalizado" id="oi" scope="row">Media de Exatas</th>
+                <td class="personalizado">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="personalizado" id="oi" scope="row">Media de Humanas</th>
+                <td class="personalizado">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
