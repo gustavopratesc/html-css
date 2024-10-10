@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando formularios</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercitando Formularios</h1>
+    </header>
+    <body>
+        <form action="cadastro.php" method="post">
+            <fieldset>
+                <legend>Cadastro de site</legend>
+                <p>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="sexo" id="mas" required>
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="sexo" id="fem" required>
+            
+                </p>
+                <p>
+                    <label for="iusuario">Usuario:</label>
+                    <input type="text" name="usuario" id="iusuario" maxlength="20" required autocomplete="username" placeholder="usuario"><br>
+
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="email"><br>
+
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" placeholder="senha" maxlength="10" required>
+                </p>
+                <p>
+                    <label for="idata">Data nascimento</label>
+                    <input type="datetime-local" name="data" id="idata">
+                </p>
+                <p>
+                    Esportes Favoritos<br><br>
+                    <input type="checkbox" name="fut" id="ifut">
+                    <label for="ifut">Futebol</label>
+
+                    <input type="checkbox" name="bas" id="ibas">
+                    <label for="ibas">Basquete</label>
+
+                    <input type="checkbox" name="nat" id="inat">
+                    <label for="inat">Natação</label>
+
+                    <input type="checkbox" name="ten" id="iten">
+                    <label for="iten">Tênis</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="inivel">Nivel de Satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="100" value="2">
+            </p>
+            <p>
+                <label for="ifile">Foto de perfil</label>
+                <input type="file" name="file" id="ifile">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+</body>
+</html>
