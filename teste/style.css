@@ -1,0 +1,96 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilos de Layout */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+section {
+    flex: 3;
+    padding: 20px;
+    background: #f4f4f4;
+    margin-right: 10px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background: #ccc;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+/* Media Queries para Responsividade */
+
+/* Dispositivos menores (até 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        margin-right: 0;
+    }
+}
+
+/* Dispositivos ainda menores (até 480px) */
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section, aside {
+        padding: 10px;
+    }
+}

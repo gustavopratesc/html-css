@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media (max-width: 480px) {
+    
+    h1 {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    h2 {
+        background-color: green;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    body {
+        font-size: 13px;
+    }
+    footer {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+}
